@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* sample image 01  */
+.sample {
+  position: absolute;
+  z-index: -2;
+}
+.sample .on {
+  width: 100%;
+}
+
+
+/* package cards styling */
+main .package {
+  width: 100%;
+  height: 562px;
+  padding-top:30px ;
+  background-color: #f6f6f6;
+  font-family: "Raleway", sans-serif;
+}
+.package .pack-heading {
+  width: 100%;
+  height: 62px;
+  text-align: center;
+}
+
+.pack-heading .text {
+  font-size: 28px;
+  font-weight: 600;
+}
+.pack-heading p {
+  color: #acacac;
+  font-size: 14px;
+}
+
+.package .offers {
+    width: 100%;
+    height: 448px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.offers .pack-cards {
+  width: 284px;
+  height: 361px;
+  border: 2px solid rgb(160, 160, 160);
+  position: relative;
+}
+
+
+.offers .pack-cards:hover {
+    border: 2px solid #245677;
+    cursor: pointer;
+    transform: translateY(-9%);
+    transition: 0.3s;
+}
+
+
+.pack-cards::before {
+    content: "";
+    position: absolute;
+    background-color: #8ace08;
+    left: 120px;
+    height: 2px;
+    width: 0px;
+    top: -30px;
+}
+
+
+
+.pack-cards:hover::before {
+  width: 13%;
+}
+
+.pack-cards .card-upper {
+    margin: auto;
+    border-bottom: 1px solid #9b9b9b;
+    width: 242px;
+    padding: 18px 0px 4px 0px;
+    color: #6f6f6f;
+    font-weight: 600;
+}
+
+.pack-cards .card-lower {
+  margin: auto;
+  width: 242px;
+  
+}
+
+.card-lower .price {
+  font-size: 38px;
+  font-weight: 700;
+  color: #8ace08;
+}
+
+
+.price sup {
+  font-size: 22px;
+}
+
+.discount {
+    font-weight: 600;
+    font-size: 14px;
+    color: #4d4b4b;
+    margin-bottom: 10px;
+}
+.discount .strike{
+    text-decoration: line-through;
+}
+
+
+.card-lower .features {
+    width: 100%;
+    font-size: 11px;
+}
+.features ul li {
+    list-style: none;
+    color: #6c6b6b;
+    padding-bottom: 7px;
+    font-weight: 700;
+    position: relative;
+}
+.features ul li img{
+  width: 9px;
+  position: absolute;
+  right: -12px;
+}
+
+
+.features ul strong {
+    font-weight: 900;
+}
+
+.card-lower .order-btn {
+  position: absolute;
+  top: 339px;
+  /* bottom: 368px; */
+  left: 89px;
+  }
+.order-btn button{
+    padding: 8px 18px;
+    font-size: 11px;
+    font-weight: 700;
+    border: none;
+    border-top: 1px solid #0685f6;
+    border-right: 1px solid #0685f6;
+    box-shadow: inset -1px 1px 0px white;
+    background-color: #0685f6;
+    color: white;
+    cursor: pointer;
+  }
+
+  .card-upper p{
+    font-size: 12px;
+  }
+
+  .package .view-btn {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* lower green button  */
+.view-btn button {
+    padding: 8px 62px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #8ace08;
+    color: white;
+    border: none;
+    border-top: 1px solid #8ace08;
+    border-right: 1px solid #8ace08;
+    box-shadow: inset -1px 1px 0px white;
+    cursor: pointer;
+}
+
